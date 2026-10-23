@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171512">
+  <title>مدیریت محصولات | گالری مس</title>
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-mark">م</span><span><b>گالری مس</b><small>پنل مدیریت محصولات</small></span></a><a class="back-link" href="./">مشاهده فروشگاه ↗</a></header>
+  <main class="layout">
+    <section class="intro"><span class="eyebrow">PRODUCT WORKSPACE</span><h1>مدیریت <em>محصولات</em></h1><p>محصولات را ویرایش کن و قبل از انتشار، خروجی JSON را بررسی کن.</p></section>
+    <div class="notice"><b>نسخه اولیه پنل</b><p>این نسخه در مرورگر اجرا می‌شود و تغییرات را به‌صورت فایل JSON خروجی می‌گیرد؛ هنوز به مخزن GitHub متصل نیست. برای انتشار مستقیم و امن، باید ورود احراز هویت‌شده اضافه شود. توکن دسترسی را هرگز در این صفحه وارد یا ذخیره نکن.</p></div>
+    <section class="workspace">
+      <aside class="sidebar"><div class="side-heading"><b>فهرست محصولات</b><span id="count">۰ محصول</span></div><div id="product-list" class="product-list"></div><button id="add-product" class="button button-outline" type="button">＋ افزودن محصول</button><button id="reload" class="plain-button" type="button">بارگذاری دوباره از مخزن</button></aside>
+      <section class="editor"><div class="editor-heading"><div><span class="eyebrow">PRODUCT DETAILS</span><h2 id="editor-title">محصول جدید</h2></div><label class="toggle"><input id="active" type="checkbox" checked><span>نمایش در فروشگاه</span></label></div>
+        <form id="product-form">
+          <div class="form-grid"><label>نام محصول<input id="name" required maxlength="100" placeholder="مثلاً قابلمه مسی"></label><label>دسته‌بندی<input id="category" maxlength="80" placeholder="مثلاً ظروف پخت‌وپز"></label><label>قیمت (تومان)<input id="price" type="number" min="0" step="1000" placeholder="۰"></label><label>شناسه محصول<input id="id" required pattern="[a-zA-Z0-9_-]+" maxlength="80" placeholder="copper-pot"></label><label class="full">آدرس تصویر<input id="image" type="url" placeholder="https://..."><small>برای نمایش پایدارتر، بعداً تصویر را داخل خود مخزن قرار می‌دهیم.</small></label><label class="full">توضیحات<textarea id="description" rows="3" maxlength="500" placeholder="توضیح کوتاه محصول"></textarea></label><label class="full">لینک سفارش<input id="orderUrl" placeholder="#contact"></label></div>
+          <div class="form-actions"><button class="button button-primary" type="submit">ذخیره در فهرست</button><button id="delete-product" class="button button-danger" type="button">حذف محصول</button></div>
+        </form>
+        <div class="export-panel"><div><b>خروجی محصولات</b><p>برای بررسی یا پشتیبان‌گیری از فهرست فعلی.</p></div><button id="download" class="button button-outline" type="button">دریافت products.json</button></div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+      </section>
+    </section>
+    <footer>گالری مس · پنل مدیریت اولیه</footer>
+  </main>
+  <script src="assets/js/admin.js" defer></script>
+</body>
+</html>
