@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "copper-pot",
+      "name": "قابلمه مسی",
+      "category": "ظروف پخت‌وپز",
+      "description": "قابلمه‌ای با ظاهر اصیل برای آشپزخانه‌های خوش‌سلیقه.",
+      "price": 0,
+      "image": "",
+      "orderUrl": "#contact",
+      "active": true
+    },
+    {
+      "id": "copper-tray",
+      "name": "سینی مسی",
+      "category": "سرو و پذیرایی",
+      "description": "انتخابی گرم و چشم‌نواز برای پذیرایی از مهمان‌ها.",
+      "price": 0,
+      "image": "",
+      "orderUrl": "#contact",
+      "active": true
+    },
+    {
+      "id": "copper-kettle",
+      "name": "کتری مسی",
+      "category": "نوشیدنی و دم‌آوری",
+      "description": "ترکیبی از حال‌وهوای سنتی و طراحی ماندگار.",
+      "price": 0,
+      "image": "",
+      "orderUrl": "#contact",
+      "active": true
+    }
+  ]
+}
