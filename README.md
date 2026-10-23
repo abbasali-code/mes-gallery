@@ -1,2 +1,30 @@
-# mes-gallery
-Persian copper cookware store with a responsive storefront and an automated GitHub-based product management workflow.
+# گالری مس | Gallery Mes
+
+فروشگاه فارسی ظروف مسی با طراحی واکنش‌گرا و کاتالوگ محصولات مبتنی بر JSON.
+
+## امکانات
+- فروشگاه فارسی و راست‌چین با طراحی سازگار با موبایل و دسکتاپ
+- بارگذاری محصولات از `products.json`
+- پنل اولیه مدیریت محصولات در `admin.html`
+- گردش‌کار GitHub Actions برای انتشار سایت روی GitHub Pages
+
+## فایل‌ها
+- `index.html` — صفحه فروشگاه
+- `products.json` — فهرست محصولات
+- `admin.html` — پنل اولیه برای ویرایش و خروجی JSON
+- `assets/css/` و `assets/js/` — استایل‌ها و اسکریپت‌ها
+- `.github/workflows/pages.yml` — انتشار خودکار GitHub Pages
+
+## راه‌اندازی GitHub Pages
+1. در مخزن به **Settings → Pages** برو.
+2. در بخش **Build and deployment → Source** گزینه **GitHub Actions** را انتخاب کن.
+3. پس از push به شاخه `main`، گردش‌کار انتشار اجرا می‌شود. می‌توانی آن را از تب **Actions** هم دستی اجرا کنی.
+
+## نکته مهم درباره پنل مدیریت
+نسخه فعلی پنل در مرورگر محصولات را ویرایش می‌کند و فایل `products.json` را خروجی می‌گیرد؛ هنوز اجازه نوشتن مستقیم در مخزن را ندارد. یک سایت عمومی و ایستا به‌تنهایی نمی‌تواند به‌شکل امن فایل‌های مخزن را تغییر دهد. برای انتشار مستقیم از داخل پنل باید احراز هویت واقعی و مجوز محدودشده اضافه شود. **توکن شخصی GitHub را در HTML/JavaScript قرار نده.**
+
+## توسعه محلی
+برای اینکه `fetch("./products.json")` کار کند، پروژه را با یک وب‌سرور محلی اجرا کن؛ باز کردن مستقیم فایل HTML با `file://` کافی نیست.
+
+---
+Made with care for Gallery Mes.
